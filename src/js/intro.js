@@ -16,10 +16,14 @@ let boxes = document.getElementsByClassName("mainBoxesContainer")[0];
 
 title.classList.add("displayBlock");
 
+let miniDelay = 200;
+
 setTimeout(() => {
     header.classList.add("full");
     setTimeout(() => {
-        title.classList.remove("displayBlock");
         boxes.classList.add("show");
-    }, 200);
+    }, miniDelay);
+    setTimeout(() => {
+        title.classList.remove("displayBlock");
+    }, miniDelay+200);
 }, animationDuration);
