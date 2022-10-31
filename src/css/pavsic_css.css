@@ -1,3 +1,7 @@
+/* I'll make my own Bootstrap! With blackjack! And hookers! */
+
+/* ----------- RESET STYLES ----------- */
+
 /*
     1. Use a more-intuitive box-sizing model.
 */
@@ -57,3 +61,20 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
     isolation: isolate;
 }
+
+/* ----------- CUSTOM CLASSES ----------- */
+
+.text-center {
+    text-align: center;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

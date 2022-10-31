@@ -1,6 +1,8 @@
 // INTRO ANIMATION
 
 let animationDuration = 7000;
+// animationDuration = 70; 
+// odkomentiraj med razvojem, da hitreje naloži
 
 
 // disable scroll at start
