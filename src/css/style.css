@@ -225,6 +225,7 @@ header {
     overflow: hidden;
     opacity: 0;
     transition: opacity 8s;
+    margin-top: 41px;
     /* display: flex; */
 }
 
@@ -361,6 +362,21 @@ header {
 /* MOBILE STYLES */
 
 @media only screen and (max-width: 720px) {
+
+    .mainBox {
+        width: 200px;
+        height: 200px;
+    }
+
+    .mainBox * {
+        font-size: 1rem;
+    }
+
+    
+    .firstPage {
+        border-top-right-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
 
     @-webkit-keyframes toHeader {
         0% {

@@ -62,7 +62,11 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
+/* -------------------------------------- */
 /* ----------- CUSTOM CLASSES ----------- */
+/* -------------------------------------- */
+
+/* TEXT */
 
 .text-center {
     text-align: center;
@@ -72,9 +76,15 @@ p, h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+/* FLEX */
+
 .flex-center-center {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
