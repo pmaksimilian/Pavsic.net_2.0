@@ -254,7 +254,9 @@ header {
 }
 
 .bubble:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    -webkit-animation: bubble-anim 2s ease-out infinite;
+    animation: bubble-anim 2s ease-out infinite;
 }
 
 .bubble:before {
@@ -268,141 +270,18 @@ header {
     transform: rotate(-20deg);
 }
 
-.bubbleContent {
+.mainBoxContent, .bubbleContent {
+    position: absolute;
     padding: 17%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bubbleTitle {
+.mainBoxTitle, .bubbleTitle {
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
 }
-
-
-/* ANIMATIONS */
-
-@-webkit-keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        border: none;
-    }
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        border: none;
-    }
-}
-
-@-webkit-keyframes typingS {
-    from {
-        width: 0;
-        visibility: visible;
-    }
-    to {
-        visibility: visible;
-    }
-}
-
-@keyframes typingS {
-    from {
-        width: 0;
-        visibility: visible;
-    }
-    to {
-        visibility: visible;
-    }
-}
-
-@-webkit-keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
-@-webkit-keyframes toHeader {
-    0% {
-        transform: translate(calc(50vw - 50%), calc(42vh)) scale(3);
-    }
-
-    60% {
-        transform: translate(calc(50vw - 50%), calc(42vh)) scale(3);
-    }
-
-    100% {
-        transform: translate(41px, 0) scale(1);
-    }
-}
-
-@keyframes toHeader {
-    0% {
-        transform: translate(calc(50vw - 50%), calc(42vh)) scale(3);
-    }
-
-    60% {
-        transform: translate(calc(50vw - 50%), calc(42vh)) scale(3);
-    }
-
-    100% {
-        transform: translate(41px, 0) scale(1);
-    }
-}
-
-/* MOBILE STYLES */
-
-@media only screen and (max-width: 720px) {
-
-    .mainBox {
-        width: 200px;
-        height: 200px;
-    }
-
-    .mainBox * {
-        font-size: 1rem;
-    }
-
-    
-    .firstPage {
-        border-top-right-radius: 60px;
-        border-bottom-right-radius: 60px;
-    }
-
-    @-webkit-keyframes toHeader {
-        0% {
-            transform: translate(calc(50vw - 50%), calc(42vh)) scale(1.5);
-        }
-
-        60% {
-            transform: translate(calc(50vw - 50%), calc(42vh)) scale(1.5);
-        }
-
-        100% {
-            transform: translate(41px, 0) scale(1);
-        }
-    }
-
-    @keyframes toHeader {
-        0% {
-            transform: translate(calc(50vw - 50%), calc(42vh)) scale(1.5);
-        }
-
-        60% {
-            transform: translate(calc(50vw - 50%), calc(42vh)) scale(1.5);
-        }
-
-        100% {
-            transform: translate(41px, 0) scale(1);
-        }
-    }
-  }
