@@ -52,7 +52,7 @@ h1, h2 {
 .main-wrapper {
     width: 100vh;
     height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
+    transform: rotate(-90deg) translateX(-100%);
     transform-origin: top left;
     overflow-y: scroll;
     overflow-x: hidden;
